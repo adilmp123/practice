@@ -46,6 +46,24 @@ void dequeue()
         }
     }
 }
+void display()
+{
+    if(front==-1)
+    {
+        printf("queue is empty");
+    }
+    else
+    {
+        int i=front,j=rear;
+        printf("\n");
+        while(i!=j)
+        {
+            printf("%d ",queue[i]);
+            i=(i+1)%size;
+        }
+        printf("%d",queue[i]);
+    }
+}
 int main()
 {
     size=5;
@@ -55,15 +73,6 @@ int main()
     enqueue(4);
     enqueue(5);
     dequeue();
-    dequeue();
     enqueue(1);
-    enqueue(2);
-    dequeue();
-    dequeue();
-    enqueue(1);
-    enqueue(2);
-    dequeue();
-    dequeue();
-    enqueue(1);
-    enqueue(2);
+    display();
 }
