@@ -1,0 +1,3 @@
+rollno 3 name Adil mark1 30 mark2 30 mark3 30
+rollno 1 name Abhinav mark1 100 mark2 100 mark3 100
+rollno 8 name Amish mark1 100 mark2 100 mark3 100
