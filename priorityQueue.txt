@@ -1,0 +1,43 @@
+if(front==0 && rear==N-1)
+{
+    print queue overflow
+}
+else if(front==-1)
+{
+    front=rear=0
+    a[front].item = item;
+    a[front].priority = priority;
+}
+else if(rear==N-1)
+{
+    for i=front to rear
+        a[i-1]] = a[i]
+    front--
+    rear--
+    for i=rear to front
+        if(a[i].priority<priority)
+        {
+            break;
+        }
+    loc = i+1
+    for i=rear to loc
+    a[i+1] = a[i]
+
+    a[loc].item = item
+    a[loc].priority = priority
+    rear++
+}
+else
+{
+    for i=rear to front
+        if a[i].priority <priority
+            break
+
+    loc = i+1
+
+    for i=rear to loc   
+        a[i+1] = a[i]
+    a[loc].item = item
+    a[loc].priority = priority
+    rear++
+}
